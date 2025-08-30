@@ -57,11 +57,48 @@ Nutriflow combines **data engineering, AI/ML, and user-centric design**:
 
 ```mermaid
 flowchart TD
-    U[User] -->|Scans Pantry / Uploads Recipe| I[Ingredient Recognition]
-    I --> N[Nutrition Insights]
-    N --> R[Recommendations Engine]
-    R --> M[Meal Plan + Grocery List]
-    M --> O[Ordering & Delivery Integration]
+
+A[Login / Sign-up] --> B{Onboarding?}
+B -->|Yes| C[Set Preferences - diet, allergens, goals]
+B -->|Skip| D[Go to Dashboard]
+
+C --> D
+D --> E[Explore Features]
+
+E --> F[Search Foods & Recipes]
+E --> G[Upload Pantry / Receipt - Optional]
+E --> H[Scan Ingredient Image]
+
+G --> P[Pantry Inventory]
+H --> P
+P --> F
+
+F --> R[Recipe Detail View]
+R --> R1[See Nutrition Info + Substitutions]
+R --> R2[Add to Meal Plan]
+R --> R3[Add Ingredients to Cart]
+
+R2 --> M[Meal Planner Calendar]
+M --> M1[Auto-Generated Grocery List]
+M --> R3
+
+R3 --> S[Grocery Cart]
+S --> S1[Compare Prices Across Stores]
+S1 --> S2[Checkout / Link to Retailer]
+S --> P
+
+M --> I[Nutrition Snapshot & Progress]
+S2 --> I
+P --> I
+I --> D
+
+I --> Z1[Achievements & Badges]
+I --> Z2[Sustainability Stats - waste saved, $ saved]
+I --> Z3[Community Recipes & Social Sharing]
+
+D --> H1[Join or Create Group/Household]
+H1 --> P
+H1 --> M
 ```
 
 ---
