@@ -1,0 +1,32 @@
+name: Sync README to Project-Description.md
+
+on:
+  push:
+    paths:
+      - "README.md"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Copy README.md to Project-Description.md
+        run: |
+          if [ -f README.md ]; then
+            cp README.md Project-Description.md
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add Project-Description.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Sync README to Project-Description.md"
+            git push
+          fi
