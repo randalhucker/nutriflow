@@ -113,5 +113,3 @@ H1 --> M
 ---
 
 📌 This document will evolve over the term to include project updates, architecture details, and progress milestones.
-
-- This will auto-sync with Project-Description.md
