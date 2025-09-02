@@ -9,6 +9,7 @@
   - [LinkedIn](https://www.linkedin.com/in/randy-hucker)
 
 - **Sam Graler**
+
   - Major: Computer Science
   - Email: [gralersm@mail.uc.edu](mailto:gralersm@mail.uc.edu)
   - [LinkedIn](https://www.linkedin.com/in/sam-graler)
