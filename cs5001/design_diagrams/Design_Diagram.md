@@ -57,7 +57,7 @@ flowchart LR
 
 ---
 
-## Design D1 — Subsystems (Elaboration of D0)
+## Design D1 - Subsystems (Elaboration of D0)
 
 **Project Title:** NutriFlow  
 **Goal Statement:** Help households plan meals, track nutrition, and purchase ingredients at the best value while minimizing waste.
@@ -144,7 +144,7 @@ flowchart LR
 
 ---
 
-## Design D2 — Detailed Data Flow (Elaboration of D1)
+## Design D2 - Detailed Data Flow (Elaboration of D1)
 
 **Project Title:** NutriFlow  
 **Goal Statement:** Help households plan meals, track nutrition, and purchase ingredients at the best value while minimizing waste.
