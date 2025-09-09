@@ -3,6 +3,7 @@
 ## Terminology
 
 Here we establish a list of acronyms to promote brevity in the descriptions of the following tasks:
+
 - **D0-D2**: three design diagrams created to satisfy assignment 4 (stored under `design_diagrams`)
 - Features (abbreviated from design diagrams):
   - **MP**: Meal Planning
@@ -10,7 +11,7 @@ Here we establish a list of acronyms to promote brevity in the descriptions of t
   - **CE**: Cart Engine & Price Compare
   - **IX**: Intake Log & Analytics
   - **SR**: Search & Exploration
-  - **CL**: Collaboration & Permissions 
+  - **CL**: Collaboration & Permissions
   - **RE**: Recommendation Engine
   - **NT**: Notifications
   - **EI**: External Integrations (Store APIs, OCR/Barcode)
