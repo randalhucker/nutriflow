@@ -18,10 +18,10 @@ flowchart LR
   classDef io fill:#f0f7ff,stroke:#09f,stroke-width:1px,color:#111
 
   %% External Actors
-  U((Household Users)):::actor
   ExtStores((Store/E-Commerce<br/>APIs)):::actor
   ExtRecipes((External Recipe<br/>Catalogs/APIs)):::actor
   ExtScan((OCR/Barcode<br/>Services)):::actor
+  U((Household Users)):::actor
 
   %% System Boundary
   subgraph NF[NutriFlow]
@@ -50,9 +50,9 @@ flowchart LR
   NF --> Out2 --> U
   NF --> Out3 --> U
 
-  NF --- ExtStores
-  NF --- ExtRecipes
-  NF --- ExtScan
+  ExtStores --> NF
+  ExtRecipes --> NF
+  ExtScan --> NF
 ```
 
 ---
