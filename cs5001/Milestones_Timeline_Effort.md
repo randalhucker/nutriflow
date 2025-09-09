@@ -12,8 +12,8 @@ This document reflects the updated Tasklist (18 items) and the modules/subsystem
 ## Milestones List
 
 - **M1 - Project Kickoff & Architecture Baseline (Sep 12, 2025):** Confirm canonical domain types (Quantity, Money, NutritionFacts), agree on initial data entities, and sketch service/API boundaries. Deliverables: shared glossary, entity list, and high-level API map.
-- **M2 - Data Models & Migrations Ready (Sep 23, 2025):** SQLAlchemy models and Alembic migrations ready for core entities (USER, HOUSEHOLD/Memberships, PANTRYITEM, CART/CARTITEM, STORE/STOREITEM/PriceHistory, INTAKELOG/Items, ACTIONLOG). Seed fixtures available.
-- **M3 - API Design & QA Plan Approved (Sep 23, 2025):** REST/OpenAPI endpoints (MP, PM, CE, IX, SR, CL) reviewed; MVP acceptance criteria and QA plans approved.
+- **M2 - Data Models & Migrations Ready (Sep 23, 2025):** SQLAlchemy models ready for core entities (USER, HOUSEHOLD/Memberships, PANTRYITEM, CART/CARTITEM, STORE/STOREITEM/PriceHistory, INTAKELOG/Items, ACTIONLOG). Seed fixtures available.
+- **M3 - API Design & QA Plan Approved (Sep 23, 2025):** REST/OpenAPI endpoints (MP, PM, CE, IX, SR, CL) reviewed; MVP acceptance criteria approved.
 - **M4 - Integrations Alpha (Oct 8, 2025):** OCR/Barcode ingestion creates PANTRYITEM updates; mock store adapters feed STOREITEM + PriceHistory; CE can read external data for comparisons.
 - **M5 - Cart Engine Compute + Smart Cart UI Beta (Oct 26, 2025):** CE computes “Needed Items” (Plan − Pantry), evaluates substitutions; Smart Cart UI shows diff, store switcher, price cards, and recipe cost breakdown.
 - **M6 - Analytics Rollups + UI Implementations (Nov 3, 2025):** IX rollups across ingredient→recipe→meal→plan→intake cached; MP/IX/RE and PM/CE/SR UI implementations hit functional parity for MVP.
@@ -27,7 +27,7 @@ This document reflects the updated Tasklist (18 items) and the modules/subsystem
 
 ## Table 1. Timeline (Tasks and Milestones)
 
-_All dates are planned and reflect dependencies and module sequencing across the Sept 9–Dec 8 window._
+_All dates are planned and reflect dependencies and module sequencing across the Sept 9-Dec 8 window._
 
 |  ID |   Type    | Task/Milestone                                                                    | Owner (Primary) | Start      | End / Planned Date | Dependencies | Deliverable / Notes                                             |
 | --: | :-------: | :-------------------------------------------------------------------------------- | :-------------- | :--------- | :----------------- | :----------- | :-------------------------------------------------------------- |
