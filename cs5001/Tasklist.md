@@ -5,7 +5,7 @@
 Here we establish a list of acronyms to promote brevity in the descriptions of the following tasks:
 
 - **D0-D2**: three design diagrams created to satisfy assignment 4 (stored under `design_diagrams`)
-- Features (abbreviated from design diagrams):
+- Features (abbreviated from `design_diagrams`):
   - **MP**: Meal Planning
   - **PM**: Pantry Manager
   - **CE**: Cart Engine & Price Compare
