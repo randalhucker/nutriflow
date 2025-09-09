@@ -1,4 +1,4 @@
-# Tasklist — NutriFlow (Assignment #5)
+# Tasklist - NutriFlow (Assignment #5)
 
 > Scope aligns with Design Diagrams (D0–D2): Meal Planning (MP), Pantry Manager (PM), Cart Engine & Price Compare (CE), Intake Log & Analytics (IX), Search & Exploration (SR), Collaboration & Permissions (CL), Recommendation Engine (RE), Notifications (NT), and External Integrations (Store APIs, OCR/Barcode).
 
