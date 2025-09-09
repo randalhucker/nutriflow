@@ -21,7 +21,7 @@ Here we establish a list of acronyms to promote brevity in the descriptions of t
 - **Randy** - Backend & Data Layer, External Service Integration, Frontend, AI/ML Integration
 - **Sam** - Product QA, Backend API, Cart / Pantry Algorithms, Frontend, AI/ML Integration
 
-## Tasks (14)
+## Tasks (18)
 
 1. **Specify** SQLAlchemy models and database migrations for USER, HOUSEHOLD & Memberships, PANTRYITEM, CART/CARTITEM, STORE/STOREITEM & PriceHistory, INTAKELOG & Items, and ACTIONLOG, **[Owner: Randy]**.
 2. **Specify** canonical data models (Quantity, Money, NutritionFacts) and normalize join tables for Recipe/Meal entities consistent with D2, **[Owner: Randy]**.
