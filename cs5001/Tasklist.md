@@ -17,6 +17,8 @@
 6. **Optimize** IX roll‑ups (ingredient→recipe→meal→plan→intake) with caching for day/week summaries and expose progress bars to the UI, **[Owner: Randy]**.
 7. **Integrate** service stubs for store checkout/autoload flows to support future e‑commerce handoff while gating behind feature flags, **[Owner: Randy]**.
 
+---
+
 8. **Integrate** store/e‑commerce adapters (e.g., Kroger/Walmart/Instacart mocks) and implement the price history ingestion pipeline into STORE/STOREITEM, **[Owner: Sam]**.
 9. **Implement** OCR/Barcode receipt ingestion using external services, parse line items, match to STOREITEM with confidence scoring, and emit PANTRYITEM updates, **[Owner: Sam]**.
 10. **Develop** Smart Cart UI (plan‑vs‑pantry diff, store switcher, price cards, recipe cost breakdown) aligned to CE outputs and error states, **[Owner: Sam]**.
