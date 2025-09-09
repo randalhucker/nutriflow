@@ -3,7 +3,7 @@
 **Team Members:** Randy Hucker, Sam Graler  
 **Project Title:** NutriFlow  
 **Goal Statement:** Help households plan meals, track nutrition, and purchase ingredients at the best value while minimizing waste.  
-**Planning Window:** Start **2025-09-09** → Final submission **2025-12-08**.  
+**Planning Window:** Start **2025-09-09** → Final submission **2025-12-08**.
 
 This document reflects the updated Tasklist (18 items) and the modules/subsystems from the approved design (MP, PM, CE, IX, SR, CL, RE, NT, EI). Milestones are mapped to these subsystems and appear in the timeline table.
 
