@@ -1,4 +1,4 @@
-# NutriFlow — Design Diagrams
+# NutriFlow - Design Diagrams (Assignment #5)
 
 Below are three Mermaid design diagrams for **NutriFlow**. A legend explains the conventions and the focus remains on inputs and outputs.
 
@@ -175,8 +175,8 @@ flowchart TB
   RE[Recommendation Engine]:::module
   NT[Notifications and Alerts]:::alert
 
-  %% Data Layer — Core Entities (grouped)
-  subgraph DB[Data Layer — Core Entities]
+  %% Data Layer - Core Entities (grouped)
+  subgraph DB[Data Layer - Core Entities]
     UDB[(USER, PREFERENCES, ACTIONLOG)]:::datastore
     HH[(HOUSEHOLD, Memberships)]:::datastore
     FOODDB[(FOOD, INGREDIENT, NUTRITIONFACTS)]:::datastore

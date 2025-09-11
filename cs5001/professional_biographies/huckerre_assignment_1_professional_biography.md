@@ -10,7 +10,7 @@
 
 ## Co-op & Work Experience
 
-### **Physna, Inc.** — _Contract Software Engineer_
+### **Physna, Inc.** - _Contract Software Engineer_
 
 **May 2024 – Present | Columbus, OH (Hybrid)**
 
@@ -21,7 +21,7 @@
 
 ---
 
-### **Physna, Inc.** — _Software Engineer Intern_
+### **Physna, Inc.** - _Software Engineer Intern_
 
 **Jan 2022 – May 2024 | Columbus, OH (Hybrid)**
 
@@ -33,7 +33,7 @@
 
 ---
 
-### **Pieces for Developers** — _Software Engineer Intern_
+### **Pieces for Developers** - _Software Engineer Intern_
 
 **Apr 2023 – Sep 2023 | Cincinnati, OH (Hybrid)**
 

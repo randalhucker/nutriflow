@@ -1,4 +1,4 @@
-# User Stories - NutriFlow
+# NutriFlow - User Stories (Assignment #4)
 
 - As a household cook, I want to build a weekly meal plan from recipes and foods so that I can hit my nutrition targets without overthinking each day.
 - As a grocery shopper, I want NutriFlow to auto-create my cart from my meal plan and compare prices across nearby stores so that I spend less time shopping and save money.

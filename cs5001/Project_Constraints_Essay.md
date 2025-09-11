@@ -1,4 +1,4 @@
-# Project Constraints Essay
+# NutriFlow - Project Constraints Essay (Assignment #7)
 
 NutriFlow’s design is bound first by economic realities: as a two‑person team with no outside financial support, funds for any necessary resources will be supplied personally until the need arises for significant funding (at which point we would pursue available grants/fundraising opportunities). This fact influences what design choices are available to us, encouraging us to prioritize open‑source tooling, develop custom store adapters, and use lightweight AI models to avoid API fees and steep cloud computing costs. It is possible that this project could result in a viable product, which would require investment in things like infrastructure scaling and marketing, but this is likely outside the scope of the capstone project itself.
 

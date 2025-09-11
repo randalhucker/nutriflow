@@ -7,7 +7,7 @@
 
 ## Co-op and Other Related Experiences
 
-### Cyber Engineering Intern, Cryptic Vector (4 semesters) — Liberty Township, Ohio
+### Cyber Engineering Intern, Cryptic Vector (4 semesters) - Liberty Township, Ohio
 These descriptions are kept general to respect the sensitive nature of the projects on which I worked.
 
 #### Rotation 1
