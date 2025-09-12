@@ -21,7 +21,7 @@ jobs:
       - name: Copy README.md to Project-Description.md
         run: |
           if [ -f README.md ]; then
-            cp README.md Project-Description.md
+            cp README.md cs5001/assignment_2/Project-Description.md
           fi
 
       - name: Commit and push if changed
