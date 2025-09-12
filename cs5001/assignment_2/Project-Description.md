@@ -1,5 +1,7 @@
 # Nutriflow
 
+> NOTE: all CS-5001 assignment documents can be found under cs5001/assignment_`#`/ where `#` is the assignment number
+
 ## Team Members
 
 - **Randy Hucker**
