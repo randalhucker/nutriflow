@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add Project-Description.md
+          git add cs5001/assignment_2/Project-Description.md
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
