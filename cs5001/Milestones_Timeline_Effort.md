@@ -6,6 +6,7 @@
 **Goal Statement:** Help households plan meals, track nutrition, and purchase ingredients at the best value while minimizing waste.
 
 > Planned due date allows for time to produce final presentation before the CEAS Expo in the Spring
+
 ---
 
 ## Milestones List
@@ -61,26 +62,26 @@
 
 _Primary owner receives the larger share. Percentages per task sum to 100%._
 
-|  ID | Task                                                                                                | Randy (%) | Sam (%) | Primary | Associated Milestone                                      |
-| --: | :---------------------------------------------------------------------------------------------------------- | --------: | ------: | :------ | :-------------------------------------------------------- |
-|   1 | Specify SQLA models and migrations                                                                          |        80 |      20 | Randy   | M2          |
-|   2 | Specify canonical data models                                                                               |        65 |      35 | Randy   | M1          |
-|   3 | Implement CL auth and role checks                                                                           |        60 |      40 | Randy   | M2          |
-|   4 | Implement store/e-commerce adapters and price history ingestion into STORE/STOREITEM                        |        70 |      30 | Randy   | M3 |
-|   5 | Implement OCR/Barcode receipt ingestion; parse, match to STOREITEM with confidence; emit PANTRYITEM updates |        70 |      30 | Randy   | M3 |
-|   6 | Design UI for PM, CE, SR                                                                                    |        70 |      30 | Randy   | M4 |
-|   7 | Implement UI for PM, CE, SR                                                                                 |        55 |      45 | Randy   | M4 |
-|   8 | Research additional AI/ML touch points                                                                      |        55 |      45 | Randy   | M6 |
-|   9 | Implement additional AI/ML touch points with lightweight models                                             |        60 |      40 | Randy   | M6 |
-|  10 | Specify MVP acceptance criteria and QA test plans                                                           |        35 |      65 | Sam     | M2          |
-|  11 | Design REST/OpenAPI endpoints for MP, PM, CE, IX, SR, CL with lifecycles and error models                   |        35 |      65 | Sam     | M2          |
-|  12 | Develop automated API contract tests and E2E UI tests with seeded fixtures                                  |        30 |      70 | Sam     | M4 |
-|  13 | Develop Smart Cart UI                                                                                       |        35 |      65 | Sam     | M4 |
-|  14 | Build CE computation                                                                                        |        40 |      60 | Sam     | M4 |
-|  15 | Optimize IX rollups                                                                                         |        40 |      60 | Sam     | M5 |
-|  16 | Design UI for MP, IX, RE                                                                                    |        30 |      70 | Sam     | M5 |
-|  17 | Implement UI for MP, IX, RE                                                                                 |        40 |      60 | Sam     | M5 |
-|  18 | Establish automated testing per QA plans and add project documentation                                      |        30 |      70 | Sam     | M7 |
+|  ID | Task                                                                                                        | Randy (%) | Sam (%) | Primary | Associated Milestone |
+| --: | :---------------------------------------------------------------------------------------------------------- | --------: | ------: | :------ | :------------------- |
+|   1 | Specify SQLA models and migrations                                                                          |        80 |      20 | Randy   | M2                   |
+|   2 | Specify canonical data models                                                                               |        65 |      35 | Randy   | M1                   |
+|   3 | Implement CL auth and role checks                                                                           |        60 |      40 | Randy   | M2                   |
+|   4 | Implement store/e-commerce adapters and price history ingestion into STORE/STOREITEM                        |        70 |      30 | Randy   | M3                   |
+|   5 | Implement OCR/Barcode receipt ingestion; parse, match to STOREITEM with confidence; emit PANTRYITEM updates |        70 |      30 | Randy   | M3                   |
+|   6 | Design UI for PM, CE, SR                                                                                    |        70 |      30 | Randy   | M4                   |
+|   7 | Implement UI for PM, CE, SR                                                                                 |        55 |      45 | Randy   | M4                   |
+|   8 | Research additional AI/ML touch points                                                                      |        55 |      45 | Randy   | M6                   |
+|   9 | Implement additional AI/ML touch points with lightweight models                                             |        60 |      40 | Randy   | M6                   |
+|  10 | Specify MVP acceptance criteria and QA test plans                                                           |        35 |      65 | Sam     | M2                   |
+|  11 | Design REST/OpenAPI endpoints for MP, PM, CE, IX, SR, CL with lifecycles and error models                   |        35 |      65 | Sam     | M2                   |
+|  12 | Develop automated API contract tests and E2E UI tests with seeded fixtures                                  |        30 |      70 | Sam     | M4                   |
+|  13 | Develop Smart Cart UI                                                                                       |        35 |      65 | Sam     | M4                   |
+|  14 | Build CE computation                                                                                        |        40 |      60 | Sam     | M4                   |
+|  15 | Optimize IX rollups                                                                                         |        40 |      60 | Sam     | M5                   |
+|  16 | Design UI for MP, IX, RE                                                                                    |        30 |      70 | Sam     | M5                   |
+|  17 | Implement UI for MP, IX, RE                                                                                 |        40 |      60 | Sam     | M5                   |
+|  18 | Establish automated testing per QA plans and add project documentation                                      |        30 |      70 | Sam     | M7                   |
 
 **Totals (sum of task-level percentages):** Randy = **900** • Sam = **900**
 
