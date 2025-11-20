@@ -28,6 +28,15 @@
 
 ### 10. Appendix
 
+## Final Design Document Assignment Revision Notes
+
+For the Final Design Document, several assignments (1, 3, 5, 6, 7) were left largely unmodified for one of two reasons: 
+1. The assignment's content did not depend on the progress of the project (assignments #1 and #3) and 
+2. Our progress on the project did not necessitate updating the assignment's content (assignments #5, #6, and #7). 
+
+The first case is self-explanatory, as it is clear that professional biographies (1) and preliminary personal assessments (3) would not be affected by the projects progression. To elaborate further on the second case, our work has not revealed significant issues in the work distribution/timeline (5/6), nor has it exposed any previously unconsidered constraints (7). We expect that this will not always be the case, but in the context of the final design document that is the reason those assignments were not revised.
+
+Please reach out if more explanation is needed!
 
 ## NutriFlow CS5001 Project Description (README)
 
