@@ -57,83 +57,73 @@ NutriFlow combines **data engineering, AI/ML, and user-centric design**:
 ```mermaid
 flowchart TD
 
-A[Login / Sign-up] --> B{Onboarding?}
-B -->|Yes| C[Set Preferences - diet, allergens, goals]
-B -->|Skip| D[Dashboard]
+A["Login / Sign-up"] --> B{"Onboarding?"}
+B -->|Yes| C["Set Preferences - diet, allergens, goals"]
+B -->|Skip| D["Dashboard"]
 
-C --> H1[Join or Create Household]
+C --> H1["Join or Create Household"]
 C --> D
 H1 --> D
 
-D --> E[Explore Features]
+D --> E["Explore Features"]
 
-%% Core feature entry points from Dashboard
-E --> F[Search & Explore Foods/Recipes]
-E --> G[Upload Pantry / Receipt]
-E --> H[Scan Ingredient Barcode/Image]
-E --> P[Pantry Manager]
-E --> M[Meal Planner]
-E --> S[Grocery Cart]
-E --> X[Intake Log]
-E --> I[Nutrition Snapshot & Progress]
+E --> F["Search and Explore Foods / Recipes"]
+E --> G["Upload Pantry or Receipt"]
+E --> H["Scan Ingredient Barcode or Image"]
+E --> P["Pantry Manager"]
+E --> M["Meal Planner"]
+E --> S["Grocery Cart"]
+E --> X["Intake Log"]
+E --> I["Nutrition Snapshot and Progress"]
 
-%% Pantry ingestion & recognition
-G --> RCP[Receipt OCR & Parsing]
+G --> RCP["Receipt OCR and Parsing"]
 RCP --> P
 
-H --> ING[Ingredient Recognition]
+H --> ING["Ingredient Recognition"]
 ING --> P
 
-%% Pantry-driven flows
 P --> F
 P --> M
 P --> S
-P --> N[Notifications - expiry, low stock, reminders]
+P --> N["Notifications - expiry, low stock, reminders"]
 
-%% Search & recipes
-F --> R[Recipe Detail View]
-R --> R1[See Nutrition Info & Substitutions]
-R --> R2[Add to Meal / Plan]
-R --> R3[Add Ingredients to Cart]
+F --> R["Recipe Detail View"]
+R --> R1["See Nutrition Info and Substitutions"]
+R --> R2["Add to Meal or Plan"]
+R --> R3["Add Ingredients to Cart"]
 
-%% Meal planning & grocery list
 R2 --> M
-M --> M1[Auto-Generated Grocery List (Plan − Pantry)]
+M --> M1["Auto-Generated Grocery List - Plan vs Pantry"]
 M1 --> S
 M --> X
 M --> I
 
-%% Cart engine & price comparison
 R3 --> S
-S --> S1[Compare Prices Across Stores]
-S --> S3[Cart vs Plan Consistency Check]
+S --> S1["Compare Prices Across Stores"]
+S --> S3["Cart vs Plan Consistency Check"]
 S3 --> M
 
-S1 --> EXT[Store Integrations (APIs / E-commerce)]
-EXT --> S2[Checkout / Link to Retailer]
+S1 --> EXT["Store Integrations - Retail APIs"]
+EXT --> S2["Checkout or Link to Retailer"]
 
 S --> P
 S2 --> I
 
-%% Intake logging & analytics
 X --> I
 P --> I
 M --> I
 
-%% Insights, sustainability, and feedback loops
-I --> Z1[Achievements & Badges]
-I --> Z2[Sustainability Stats - waste saved, $ saved]
-I --> Z3[Community Recipes & Social Sharing]
+I --> Z1["Achievements and Badges"]
+I --> Z2["Sustainability Stats - waste saved and money saved"]
+I --> Z3["Community Recipes and Social Sharing"]
 I --> D
 
-%% Household collaboration
-D --> H2[Household Collaboration]
+D --> H2["Household Collaboration"]
 H2 --> P
 H2 --> M
 H2 --> S
 
-%% AI / recommendation engine touching multiple features
-AI[AI / Recommendation Engine]
+AI["AI and Recommendation Engine"]
 F --> AI
 M --> AI
 P --> AI
@@ -142,7 +132,6 @@ AI --> R
 AI --> M
 AI --> S
 
-%% Notifications return user to app
 N --> D
 ```
 
