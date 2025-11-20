@@ -1,45 +1,73 @@
-# Nutriflow
+# NutriFlow Final Design Report
 
-> NOTE: all CS-5001 assignment documents can be found under cs5001/assignment_`#`/ where `#` is the assignment number
+> NOTE: all individual CS-5001 assignment documents can be found under cs5001/assignment_`#`/ where `#` is the assignment number
 
-## Team Members
+## Table of Contents
+
+### 1. [Team Names](#team-members) & [Project Abstract](#project-abstract) (in README below)
+
+### 2. [Project Description (Assignment #2)](cs5001/assignment_2/Project-Description.md)
+
+### 3. [User Stories](cs5001/assignment_4/User_Stories.md) & [Design Diagrams](cs5001/assignment_4/Design_Diagram.md)  (Assignment #4)
+
+### 4. [Project Tasks](cs5001/assignment_5/Tasklist.md) & [Timeline + Effort Matrix](cs5001/assignment_6/Milestones_Timeline_Effort.md) (Assignment #5-6)
+
+### 5. [ABET Concerns Essay](cs5001/assignment_7/Project_Constraints_Essay.md) (Assignment #7)
+
+### 6. PPT Slideshow (Assignment #8)
+- *(Add link once slideshow is uploaded)*
+
+### 7. Self-Assessment Essays (Assignment #3)
+- [Self-Assessment Essay — Sam](cs5001/assignment_3/Assignment%203%20-%20Individual%20Capstone%20Assessment%20-%20gralersm.pdf)
+- [Self-Assessment Essay — Randy](cs5001/assignment_3/Assignment%203%20-%20Individual%20Capstone%20Assessment%20-%20huckerre.pdf)
+
+### 8. Professional Biographies (Assignment #1)
+- [Professional Biography — Sam](cs5001/assignment_1/gralersm_assignment_1_professional_biography.md)
+- [Professional Biography — Randy](cs5001/assignment_1/huckerre_assignment_1_professional_biography.md)
+
+### 9. Budget
+
+### 10. Appendix
+
+
+## NutriFlow CS5001 Project Description (README)
+
+### Team Members
 
 - **Randy Hucker**
-
   - Major: Computer Science
   - Email: [randalhucker@gmail.com](mailto:randalhucker@gmail.com)
   - [LinkedIn](https://www.linkedin.com/in/randy-hucker)
 
 - **Sam Graler**
-
   - Major: Computer Science
   - Email: [gralersm@mail.uc.edu](mailto:gralersm@mail.uc.edu)
   - [LinkedIn](https://www.linkedin.com/in/sam-graler)
 
+### Project Faculty/Industry Advisor
+
+- **Dr. William Hawkins**  
+  - Assistant Professor of Computer Science, University of Cincinnati  
+  - Email: [hawkinwh@ucmail.uc.edu](mailto:hawkinwh@ucmail.uc.edu)
+  - [LinkedIn](https://www.linkedin.com/in/whh3/)
+
 ---
 
-## Project Topic Area
+### Project Topic Area
 
 **Intelligent Food Ecosystem** - An AI/ML-driven platform that delivers nutrition insights, personalized food recommendations, smart grocery planning, and sustainability tracking.
 
 ---
 
-## Project Faculty/Industry Advisor
+### Project Abstract
 
-- **Dr. William Hawkins**  
-  Assistant Professor of Computer Science  
-  University of Cincinnati  
-  📧 [hawkinwh@ucmail.uc.edu](mailto:hawkinwh@ucmail.uc.edu)
+**Problem Statement**: Modern consumers struggle to balance nutrition, affordability, and sustainability in their food choices. Information is scattered across recipes, grocery stores, and nutrition trackers leading to inconsistency and frustration.
 
----
-
-## Abstract (a. Problem Statement)
-
-Modern consumers struggle to balance nutrition, affordability, and sustainability in their food choices. Information is scattered across recipes, grocery stores, and nutrition trackers. **Nutriflow** addresses this by providing a unified platform for healthier, smarter, and more cost-effective eating.
+**Abstract**: NutriFlow addresses the difficulty of planning healthy, affordable meals by unifying recipes, nutrition data, pantry inventory, pricing, and household coordination. Smart cart generation, pantry management, and our AI-assisted recommendation engine support a unique meal planning experience that reaches across the entire process, from gathering recipes to try to bringing groceries in from your doorstep.
 
 ---
 
-## Inadequacy of Current Solutions (b)
+### Inadequacy of Current Solutions
 
 - **Nutrition Trackers** (e.g., MyFitnessPal) focus on logging, not proactive food guidance.
 - **Meal Kits** provide convenience but are costly and don't reduce food waste.
@@ -49,13 +77,13 @@ There is **no integrated solution** connecting personal preferences, pantry inve
 
 ---
 
-## Technical Background (c)
+### Technical Background
 
-Nutriflow combines **data engineering, AI/ML, and user-centric design**:
+NutriFlow combines **data engineering, AI/ML, and user-centric design**:
 
+- **Interactive UX** - Dashboards, recipe views, and meal planners.
 - **Data Pipelines** - Web scraping + APIs for grocery pricing, availability, and nutrition data.
 - **AI/ML Models** - Ingredient recognition, recipe generation, substitution suggestions.
-- **Interactive UX** - Dashboards, recipe views, and meal planners.
 - **Cloud Infrastructure** - GitHub repo, containerization, scalable backend services _(AWS **Lambda** & **Aurora**)_.
 
 ```mermaid
@@ -63,55 +91,99 @@ flowchart TD
 
 A[Login / Sign-up] --> B{Onboarding?}
 B -->|Yes| C[Set Preferences - diet, allergens, goals]
-B -->|Skip| D[Go to Dashboard]
+B -->|Skip| D[Dashboard]
 
+C --> H1[Join or Create Household]
 C --> D
+H1 --> D
+
 D --> E[Explore Features]
 
-E --> F[Search Foods & Recipes]
-E --> G[Upload Pantry / Receipt - Optional]
-E --> H[Scan Ingredient Image]
+%% Core feature entry points from Dashboard
+E --> F[Search & Explore Foods/Recipes]
+E --> G[Upload Pantry / Receipt]
+E --> H[Scan Ingredient Barcode/Image]
+E --> P[Pantry Manager]
+E --> M[Meal Planner]
+E --> S[Grocery Cart]
+E --> X[Intake Log]
+E --> I[Nutrition Snapshot & Progress]
 
-G --> P[Pantry Inventory]
-H --> P
+%% Pantry ingestion & recognition
+G --> RCP[Receipt OCR & Parsing]
+RCP --> P
+
+H --> ING[Ingredient Recognition]
+ING --> P
+
+%% Pantry-driven flows
 P --> F
+P --> M
+P --> S
+P --> N[Notifications - expiry, low stock, reminders]
 
+%% Search & recipes
 F --> R[Recipe Detail View]
-R --> R1[See Nutrition Info + Substitutions]
-R --> R2[Add to Meal Plan]
+R --> R1[See Nutrition Info & Substitutions]
+R --> R2[Add to Meal / Plan]
 R --> R3[Add Ingredients to Cart]
 
-R2 --> M[Meal Planner Calendar]
-M --> M1[Auto-Generated Grocery List]
-M --> R3
+%% Meal planning & grocery list
+R2 --> M
+M --> M1[Auto-Generated Grocery List (Plan − Pantry)]
+M1 --> S
+M --> X
+M --> I
 
-R3 --> S[Grocery Cart]
+%% Cart engine & price comparison
+R3 --> S
 S --> S1[Compare Prices Across Stores]
-S1 --> S2[Checkout / Link to Retailer]
+S --> S3[Cart vs Plan Consistency Check]
+S3 --> M
+
+S1 --> EXT[Store Integrations (APIs / E-commerce)]
+EXT --> S2[Checkout / Link to Retailer]
+
 S --> P
-
-M --> I[Nutrition Snapshot & Progress]
 S2 --> I
-P --> I
-I --> D
 
+%% Intake logging & analytics
+X --> I
+P --> I
+M --> I
+
+%% Insights, sustainability, and feedback loops
 I --> Z1[Achievements & Badges]
 I --> Z2[Sustainability Stats - waste saved, $ saved]
 I --> Z3[Community Recipes & Social Sharing]
+I --> D
 
-D --> H1[Join or Create Group/Household]
-H1 --> P
-H1 --> M
+%% Household collaboration
+D --> H2[Household Collaboration]
+H2 --> P
+H2 --> M
+H2 --> S
+
+%% AI / recommendation engine touching multiple features
+AI[AI / Recommendation Engine]
+F --> AI
+M --> AI
+P --> AI
+S --> AI
+AI --> R
+AI --> M
+AI --> S
+
+%% Notifications return user to app
+N --> D
 ```
 
 ---
 
-## Team Approach (d)
+### Team Approach
 
 - **Agile Iterations** to incrementally deliver scraping, recognition, and recommendation features.
 - **Faculty Guidance** from Dr. Hawkins for technical depth and academic rigor.
 - **Future Expansion**: Household collaboration, sustainability tracking, gamification, and premium features.
 
 ---
-
-📌 This document will evolve over the term to include project updates, architecture details, and progress milestones.
