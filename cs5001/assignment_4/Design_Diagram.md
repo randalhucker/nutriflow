@@ -25,16 +25,15 @@ flowchart LR
 
   %% System Boundary
   subgraph NF[NutriFlow]
-    Inp1[/User Preferences & Goals/]:::io
+    Inp1[/Household Preferences & Goals/]:::io
     Inp2[/Receipts, Barcodes, Pantry Updates/]:::io
-    Inp3[/Meal Ideas & Recipes/]:::io
+    Inp3[/Recipe Sources & Meal Ideas/]:::io
 
-    Out1[/Nutrition Reports & Alerts/]:::io
+    Out1[/Nutrition Reports & Use-Soon Alerts/]:::io
     Out2[/Smart Cart & Price Compare/]:::io
     Out3[/Recommendations & Substitutions/]:::io
   end
 
-  %% Style the subgraph (can't use ::: on subgraph line)
   style NF fill:#f7fff0,stroke:#2f7,stroke-width:1.5px,color:#111
 
   %% Flows
@@ -88,8 +87,10 @@ flowchart LR
     subgraph PM[Pantry Manager]
       PMin[/Receipts or Barcodes/]:::io
       PMcore[Inventory and Expiry Tracking]:::module
-      PMout[\\On-hand Stock and Use-Soon List\\]:::io
+      PMsoon[\\Use-Soon Items\\]:::alert
+      PMout[\\On-hand Stock and Lists\\]:::io
       PMin --> PMcore --> PMout
+      PMcore --> PMsoon
     end
 
     subgraph CE[Cart Engine and Price Compare]
@@ -115,18 +116,27 @@ flowchart LR
 
     subgraph CL[Collaboration and Permissions]
       CLcore[Household Membership and Roles]:::module
+      CLchg[/Invites & Role Updates/]:::io
       CLlog[\\Activity Feed\\]:::alert
+      CLcore --> CLlog
+    end
+
+    subgraph RE[Recommendation Engine]
+      REcore[Recipe & Substitution Logic]:::module
+      REout[\\Suggestions & Alternatives\\]:::io
+      REcore --> REout
     end
   end
 
   %% Cross-module flows
   MPout --> CEneed
   PMout --> CEneed
+  PMsoon --> MPplan
   SRout --> MPplan
   IXout --> MPplan
-  PMout --> MPplan
   CEout --> CLlog
   IXout --> CLlog
+  REout --> MPplan
 
   %% External integrations
   SRcore --- ExtRecipes
@@ -138,8 +148,10 @@ flowchart LR
   U --> PMin
   U --> SRin
   U --> IXin
+  U --> CLchg
   CEout --> U
   IXout --> U
+  REout --> U
 ```
 
 ---
@@ -175,7 +187,7 @@ flowchart TB
   RE[Recommendation Engine]:::module
   NT[Notifications and Alerts]:::alert
 
-  %% Data Layer - Core Entities (grouped)
+  %% Data Layer - Core Entities
   subgraph DB[Data Layer - Core Entities]
     UDB[(USER, PREFERENCES, ACTIONLOG)]:::datastore
     HH[(HOUSEHOLD, Memberships)]:::datastore
@@ -189,7 +201,7 @@ flowchart TB
     LOGDB[(INTAKELOG, IntakeLogItem, NutritionTargets)]:::datastore
   end
 
-  %% Inputs/Outputs (explicit)
+  %% Inputs/Outputs
   Prefs[/User Preferences and Goals/]:::io
   Receipts[/Receipts or Barcodes/]:::io
   PlanOut[\\Planned Meals and Targets\\]:::io
@@ -198,13 +210,13 @@ flowchart TB
   ReportOut[\\Nutrition Reports\\]:::io
   RecoOut[\\Use-Soon and Substitutions\\]:::io
 
-  %% Flows from Actors to Modules
+  %% Flows from Actors
   U --> Prefs --> MP
   U --> Receipts --> PM
   U --> SR
   U --> IX
 
-  %% Module <-> Data Layer
+  %% Module <-> Data
   MP <--> UDB
   MP <--> FOODDB
   MP <--> RECIPEDB
@@ -223,6 +235,7 @@ flowchart TB
   IX <--> PLANDB
   IX <--> FOODDB
   IX <--> RECIPEDB
+
   SR <--> FOODDB
   SR <--> RECIPEDB
 
@@ -239,7 +252,7 @@ flowchart TB
   SR --- Recipes
   CE === Stores
 
-  %% Inter-module data pipes (labels simplified for Mermaid)
+  %% Data pipes
   MP -->|Plan: meals; servings; dates| PlanOut
   PM -->|On-hand and expiry| NeedOut
   PlanOut --> CE
@@ -248,11 +261,12 @@ flowchart TB
   IX -->|Macro and micro rollups| ReportOut
   RE -->|Use-soon and alternatives| RecoOut
 
-  %% Outputs to user and notifications
+  %% Outputs
   CartOut --> U
   ReportOut --> U
   RecoOut --> U
   RE --> NT
+  PM --> NT
   IX --> NT
   CE --> NT
   NT --> U
