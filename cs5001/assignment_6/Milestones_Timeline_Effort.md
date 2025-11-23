@@ -14,7 +14,7 @@
 - **M1 - Project Kickoff & Architecture Baseline (09-15-2025):** Agree on canonical data types (Quantity, Money, NutritionFacts), initial ER model, and high-level API surface; align on D2 entities.
 - **M2 - Core Data Layer & Auth Complete (10-20-2025):** Models + migrations ready; Collaboration/Permissions (CL) roles in place; seeds available for dev/test.
 - **M3 - External Integrations Alpha (11-14-2025):** Store adapters and OCR/Barcode pipeline ingest data into STOREITEM/PriceHistory and PANTRYITEM; basic price compare flows.
-- **M4 - Cart Engine + Smart Cart UI Beta (12-12-2025):** CE computes needed items (Plan − Pantry), substitutions; Smart Cart UI shows diffs, store switcher, cost breakdown. PM UI implemented.
+- **M4 - Cart Engine + Smart Cart UI Beta (12-12-2025):** CE computes needed items (Plan - Pantry), substitutions; Smart Cart UI shows diffs, store switcher, cost breakdown. PM UI implemented.
 - **M5 - Search/Planning/Intake UI Cohesion (01-20-2026):** MP, IX, SR, RE UIs implemented and integrated with endpoints; macro rollups visible with progress hooks.
 - **M6 - AI/ML Touchpoints POC (02-10-2026):** Lightweight AI features (recipe assist, similarity, chatbot) deployed behind flags; measured for latency/quality.
 - **M7 - QA Coverage, Security & Docs (03-10-2026):** Acceptance criteria met; API contract + E2E tests passing; security/privacy reviewed; runbook and user help drafted.

@@ -42,7 +42,7 @@ The first case is self-explanatory, as it is clear that professional biographies
 
 Please reach out if more explanation is needed!
 
-## NutriFlow CS5001 Project Description (README)
+## NutriFlow CS5001 Project Description (Previous README)
 
 ### Team Members
 
@@ -142,7 +142,7 @@ R --> R3[Add Ingredients to Cart]
 
 %% Meal planning & grocery list
 R2 --> M
-M --> M1[Auto-Generated Grocery List (Plan − Pantry)]
+M --> M1[Auto-Generated Grocery List (Plan - Pantry)]
 M1 --> S
 M --> X
 M --> I
@@ -166,7 +166,7 @@ M --> I
 
 %% Insights, sustainability, and feedback loops
 I --> Z1[Achievements & Badges]
-I --> Z2[Sustainability Stats - waste saved, $ saved]
+I --> Z2[Sustainability Stats - waste saved, dollars saved]
 I --> Z3[Community Recipes & Social Sharing]
 I --> D
 

@@ -39,7 +39,7 @@ Here we establish a list of acronyms to promote brevity in the descriptions of t
 11. **Design** REST/OpenAPI endpoints for MP, PM, CE, IX, SR, and CL with clear resource lifecycles and error models, **[Owner: Sam]**.
 12. **Develop** automated API contract tests and end‑to‑end UI tests with seeded fixtures and synthetic store/recipe data for critical paths, **[Owner: Sam]**.
 13. **Develop** Smart Cart UI (plan‑vs‑pantry diff, store switcher, price cards, recipe cost breakdown) aligned to CE outputs and error states, **[Owner: Sam]**.
-14. **Build** the CE computation that derives “Needed Items” (Plan − Pantry), evaluates substitutions, and normalizes price‑per‑serving, **[Owner: Sam]**.
+14. **Build** the CE computation that derives “Needed Items” (Plan - Pantry), evaluates substitutions, and normalizes price‑per‑serving, **[Owner: Sam]**.
 15. **Optimize** IX roll‑ups (ingredient→recipe→meal→plan→intake) with caching for day/week summaries and expose progress bars to the UI, **[Owner: Sam]**.
 16. **Design** UI for MP, IX, RE, **[Owner: Sam]**.
 17. **Implement** UI for MP, IX, RE, **[Owner: Sam]**.
