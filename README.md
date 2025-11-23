@@ -24,9 +24,13 @@
 - [Professional Biography — Sam](cs5001/assignment_1/gralersm_assignment_1_professional_biography.md)
 - [Professional Biography — Randy](cs5001/assignment_1/huckerre_assignment_1_professional_biography.md)
 
-### 9. Budget
+### 9. [Budget](cs5001/assignment_10/Budget.md)
 
 ### 10. Appendix
+- [Link to NutriFlow Code Repository](https://github.com/randalhucker/nutriflow_expo)
+- [NutriFlow Design Document](cs5001/assignment_10/appendix%20documents/NutriFlow_Design.pdf)
+- [Semester Meeting Notes](cs5001/assignment_10/appendix%20documents/NutriFlow_Meeting_Notes.md)
+- [Preliminary UI Mocks](cs5001/assignment_10/appendix%20documents/ASN_10_Mocks.pdf)
 
 ## Final Design Document Assignment Revision Notes
 
