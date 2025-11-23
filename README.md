@@ -142,7 +142,7 @@ R --> R3[Add Ingredients to Cart]
 
 %% Meal planning & grocery list
 R2 --> M
-M --> M1[Auto-Generated Grocery List (Plan - Pantry)]
+M --> M1[Auto-Generated Grocery List: Plan minus Pantry]
 M1 --> S
 M --> X
 M --> I
