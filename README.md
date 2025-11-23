@@ -14,7 +14,7 @@
 
 ### 5. [ABET Concerns Essay](cs5001/assignment_7/Project_Constraints_Essay.md) (Assignment #7)
 
-### 6. [PPT Slideshow](cs5001/assignment_8/Fall_Design_Presentation.pdf) (Assignment #8)
+### 6. [PPT Slideshow](cs5001/assignment_8/Fall_Design_Presentation.pdf) & [Video Presentation](https://drive.google.com/drive/folders/1aOjDmqiDJpHrK66QeJYEoNwFCOIy_Z2V?usp=sharing) (Assignment #8)
 
 ### 7. Self-Assessment Essays (Assignment #3)
 - [Self-Assessment Essay — Sam](cs5001/assignment_3/Assignment%203%20-%20Individual%20Capstone%20Assessment%20-%20gralersm.pdf)

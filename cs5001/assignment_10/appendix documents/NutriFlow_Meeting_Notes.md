@@ -1,4 +1,4 @@
-# NutriFlow — Meeting Notes (Sept 9 – Nov 20, 2025)
+# NutriFlow — Meeting Notes (Sept 2 – Nov 20, 2025)
 
 The NutriFlow team met most Tuesdays and Thursdays during the semester from 3:30 to ~5:30 pm. Below are the meeting notes taken to track progress.
 
