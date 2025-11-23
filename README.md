@@ -153,8 +153,8 @@ S --> S1[Compare Prices Across Stores]
 S --> S3[Cart vs Plan Consistency Check]
 S3 --> M
 
-S1 --> EXT[Store Integrations (APIs / E-commerce)]
-EXT --> S2[Checkout / Link to Retailer]
+S1 --> EXT["Store Integrations (APIs / E-commerce)"]
+EXT --> S2["Checkout / Link to Retailer"]
 
 S --> P
 S2 --> I
