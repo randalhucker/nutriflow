@@ -1,38 +1,62 @@
-# NutriFlow Final Design Report
+# NutriFlow CS 5001/5002 Assignment Repository
+
+## CS 5002
+
+> NOTE: all individual CS-5002 assignment documents can be found under cs5002/assignment_`#`/ where `#` is the assignment number
+
+> NOTE: This section will eventually be turned into the final design report for CS 5002. As such, the table of contents is simply a placeholder at this time. As assignments are completed, links may be added, but for grading purposes the process in the above note should be used
+
+### Table of Contents
+
+#### 1. Test Plan Documentation
+
+#### 2. User Documentation
+
+#### 3. Slidedeck Documentation
+
+#### 4. Peer-Reviews, Poster, and Video
+
+#### 5. Expo Poster
+
+#### 6. Self Assessments
+
+#### 7. Final DEsign Reports
+
+## CS 5001 NutriFlow Final Design Report
 
 > NOTE: all individual CS-5001 assignment documents can be found under cs5001/assignment_`#`/ where `#` is the assignment number
 
-## Table of Contents
+### Table of Contents
 
-### 1. [Team Names](#team-members) & [Project Abstract](#project-abstract) (in README below)
+#### 1. [Team Names](#team-members) & [Project Abstract](#project-abstract) (in README below)
 
-### 2. [Project Description (Assignment #2)](cs5001/assignment_2/Project-Description.md)
+#### 2. [Project Description (Assignment #2)](cs5001/assignment_2/Project-Description.md)
 
-### 3. [User Stories](cs5001/assignment_4/User_Stories.md) & [Design Diagrams](cs5001/assignment_4/Design_Diagram.md)  (Assignment #4)
+#### 3. [User Stories](cs5001/assignment_4/User_Stories.md) & [Design Diagrams](cs5001/assignment_4/Design_Diagram.md)  (Assignment #4)
 
-### 4. [Project Tasks](cs5001/assignment_5/Tasklist.md) & [Timeline + Effort Matrix](cs5001/assignment_6/Milestones_Timeline_Effort.md) (Assignment #5-6)
+#### 4. [Project Tasks](cs5001/assignment_5/Tasklist.md) & [Timeline + Effort Matrix](cs5001/assignment_6/Milestones_Timeline_Effort.md) (Assignment #5-6)
 
-### 5. [ABET Concerns Essay](cs5001/assignment_7/Project_Constraints_Essay.md) (Assignment #7)
+#### 5. [ABET Concerns Essay](cs5001/assignment_7/Project_Constraints_Essay.md) (Assignment #7)
 
-### 6. [PPT Slideshow](cs5001/assignment_8/Fall_Design_Presentation.pdf) & [Video Presentation](https://drive.google.com/drive/folders/1aOjDmqiDJpHrK66QeJYEoNwFCOIy_Z2V?usp=sharing) (Assignment #8)
+#### 6. [PPT Slideshow](cs5001/assignment_8/Fall_Design_Presentation.pdf) & [Video Presentation](https://drive.google.com/drive/folders/1aOjDmqiDJpHrK66QeJYEoNwFCOIy_Z2V?usp=sharing) (Assignment #8)
 
-### 7. Self-Assessment Essays (Assignment #3)
+#### 7. Self-Assessment Essays (Assignment #3)
 - [Self-Assessment Essay — Sam](cs5001/assignment_3/Assignment%203%20-%20Individual%20Capstone%20Assessment%20-%20gralersm.pdf)
 - [Self-Assessment Essay — Randy](cs5001/assignment_3/Assignment%203%20-%20Individual%20Capstone%20Assessment%20-%20huckerre.pdf)
 
-### 8. Professional Biographies (Assignment #1)
+#### 8. Professional Biographies (Assignment #1)
 - [Professional Biography — Sam](cs5001/assignment_1/gralersm_assignment_1_professional_biography.md)
 - [Professional Biography — Randy](cs5001/assignment_1/huckerre_assignment_1_professional_biography.md)
 
-### 9. [Budget](cs5001/assignment_10/Budget.md)
+#### 9. [Budget](cs5001/assignment_10/Budget.md)
 
-### 10. Appendix
+#### 10. Appendix
 - [Link to NutriFlow Code Repository](https://github.com/randalhucker/nutriflow_expo)
 - [NutriFlow Design Document](cs5001/assignment_10/appendix%20documents/NutriFlow_Design.pdf)
 - [Semester Meeting Notes](cs5001/assignment_10/appendix%20documents/NutriFlow_Meeting_Notes.md)
 - [Preliminary UI Mocks](cs5001/assignment_10/appendix%20documents/ASN_10_Mocks.pdf)
 
-## Final Design Document Assignment Revision Notes
+### Final Design Document Assignment Revision Notes
 
 For the Final Design Document, several assignments (1, 3, 5, 6, 7) were left largely unmodified for one of two reasons: 
 1. The assignment's content did not depend on the progress of the project (assignments #1 and #3) and 
@@ -42,9 +66,9 @@ The first case is self-explanatory, as it is clear that professional biographies
 
 Please reach out if more explanation is needed!
 
-## NutriFlow CS5001 Project Description (Previous README)
+### NutriFlow CS5001 Project Description (Previous README)
 
-### Team Members
+#### Team Members
 
 - **Randy Hucker**
   - Major: Computer Science
@@ -56,7 +80,7 @@ Please reach out if more explanation is needed!
   - Email: [gralersm@mail.uc.edu](mailto:gralersm@mail.uc.edu)
   - [LinkedIn](https://www.linkedin.com/in/sam-graler)
 
-### Project Faculty/Industry Advisor
+#### Project Faculty/Industry Advisor
 
 - **Dr. William Hawkins**  
   - Assistant Professor of Computer Science, University of Cincinnati  
@@ -65,13 +89,13 @@ Please reach out if more explanation is needed!
 
 ---
 
-### Project Topic Area
+#### Project Topic Area
 
 **Intelligent Food Ecosystem** - An AI/ML-driven platform that delivers nutrition insights, personalized food recommendations, smart grocery planning, and sustainability tracking.
 
 ---
 
-### Project Abstract
+#### Project Abstract
 
 **Problem Statement**: Modern consumers struggle to balance nutrition, affordability, and sustainability in their food choices. Information is scattered across recipes, grocery stores, and nutrition trackers leading to inconsistency and frustration.
 
@@ -79,7 +103,7 @@ Please reach out if more explanation is needed!
 
 ---
 
-### Inadequacy of Current Solutions
+#### Inadequacy of Current Solutions
 
 - **Nutrition Trackers** (e.g., MyFitnessPal) focus on logging, not proactive food guidance.
 - **Meal Kits** provide convenience but are costly and don't reduce food waste.
@@ -89,7 +113,7 @@ There is **no integrated solution** connecting personal preferences, pantry inve
 
 ---
 
-### Technical Background
+#### Technical Background
 
 NutriFlow combines **data engineering, AI/ML, and user-centric design**:
 
@@ -192,7 +216,7 @@ N --> D
 
 ---
 
-### Team Approach
+#### Team Approach
 
 - **Agile Iterations** to incrementally deliver scraping, recognition, and recommendation features.
 - **Faculty Guidance** from Dr. Hawkins for technical depth and academic rigor.
