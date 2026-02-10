@@ -8,9 +8,9 @@
 
 ### Table of Contents
 
-#### 1. Test Plan Documentation
+#### 1. [Test Plan Documentation](cs5002/assignment_1/Test_Plan.md)
 
-#### 2. User Documentation
+#### 2. [User Documentation](cs5002/assignment_2/docs/README.md)
 
 #### 3. Slidedeck Documentation
 
