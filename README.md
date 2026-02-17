@@ -12,7 +12,7 @@
 
 #### 2. [User Documentation](cs5002/assignment_2/docs/README.md)
 
-#### 3. Slidedeck Documentation
+#### 3. [Slide Deck](cs5002/assignment_3/Slide_Deck.pdf_)
 
 #### 4. Peer-Reviews, Poster, and Video
 
