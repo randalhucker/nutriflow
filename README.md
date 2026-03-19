@@ -16,7 +16,9 @@
 
 #### 4. Peer-Reviews, Poster, and Video
 
-#### 5. Expo Poster
+This assignment constituted updating the information on [this spreadsheet](https://mailuc-my.sharepoint.com/:x:/g/personal/zhao3y3_ucmail_uc_edu/IQAfusCTTYTpQZ4Vudw90gycAWlVsUKRcUeBn7l2s31IH6M?wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1767895233565&web=1). Please navigate to that link to view any updates
+
+#### 5. [Expo Poster](cs5002/assignment_5/NutriFlow_Expo_Poster.pdf)
 
 #### 6. Self Assessments
 
