@@ -21,6 +21,8 @@ This assignment constituted updating the information on [this spreadsheet](https
 #### 5. [Expo Poster](cs5002/assignment_5/NutriFlow_Expo_Poster.pdf)
 
 #### 6. Self Assessments
+- [Sam Graler](cs5002/assignment_6/Self_Assessment_Graler.pdf)
+- [Randy Hucker]()
 
 #### 7. Final DEsign Reports
 
