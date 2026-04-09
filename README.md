@@ -1,30 +1,36 @@
 # NutriFlow CS 5001/5002 Assignment Repository
 
-## CS 5002
+## CS 5002 NutriFlow Final Design Report
 
 > NOTE: all individual CS-5002 assignment documents can be found under cs5002/assignment_`#`/ where `#` is the assignment number
 
-> NOTE: This section will eventually be turned into the final design report for CS 5002. As such, the table of contents is simply a placeholder at this time. As assignments are completed, links may be added, but for grading purposes the process in the above note should be used
-
 ### Table of Contents
 
-#### 1. [Test Plan Documentation](cs5002/assignment_1/Test_Plan.md)
+#### 1. [Updated Project Description](cs5002/assignment_7/updated_project_description.md)
 
-#### 2. [User Documentation](cs5002/assignment_2/docs/README.md)
+#### 2. [User Interface Specification](cs5002/assignment_7/user_interface_specification.md)
 
-#### 3. [Slide Deck](cs5002/assignment_3/Slide_Deck.pdf_)
+#### 3. [Test Plan and Results](cs5002/assignment_7/test_plan_with_results.md)
 
-#### 4. Peer-Reviews, Poster, and Video
+#### 4. [User Manual](cs5002/assignment_2/docs/README.md)!
 
-This assignment constituted updating the information on [this spreadsheet](https://mailuc-my.sharepoint.com/:x:/g/personal/zhao3y3_ucmail_uc_edu/IQAfusCTTYTpQZ4Vudw90gycAWlVsUKRcUeBn7l2s31IH6M?wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1767895233565&web=1). Please navigate to that link to view any updates
+#### 5. [Spring Final PPT Presentation](cs5002/assignment_3/Slide_Deck.pdf)
 
-#### 5. [Expo Poster](cs5002/assignment_5/NutriFlow_Expo_Poster.pdf)
+#### 6. [Final Expo Poster](cs5002/assignment_5/NutriFlow_Expo_Poster.pdf)
 
-#### 6. Self Assessments
-- [Sam Graler](cs5002/assignment_6/Self_Assessment_Graler.pdf)
-- [Randy Hucker]()
+#### 7. Assessments
+- Initial Self-Assessments: [Sam](cs5002/assignment_6/Self_Assessment_Graler.pdf), [Randy](cs5002/assignment_6/Self_Assessment_Hucker.pdf)
+- Final Self-Assessments: [Sam](cs5001/assignment_3/Assignment%203%20-%20Individual%20Capstone%20Assessment%20-%20gralersm.pdf), [Randy](cs5001/assignment_3/Assignment%203%20-%20Individual%20Capstone%20Assessment%20-%20huckerre.pdf)
 
-#### 7. Final DEsign Reports
+#### 8. [Summary of Hours and Justification](cs5002/assignment_7/summary_of_hours_and_justification.md)
+
+#### 9. [Summary of Expenses](cs5002/assignment_7/summary_of_expenses.md)
+
+#### 10. Appendix
+- [Updated NutriFlow Design Document](cs5002/assignment_7/appendix_documents/NutriFlow_Design.pdf)
+- [Semester Meeting Notes](cs5002/assignment_7/appendix_documents/NutriFlow_Meeting_Notes.md)
+
+---
 
 ## CS 5001 NutriFlow Final Design Report
 
@@ -55,7 +61,6 @@ This assignment constituted updating the information on [this spreadsheet](https
 #### 9. [Budget](cs5001/assignment_10/Budget.md)
 
 #### 10. Appendix
-- [Link to NutriFlow Code Repository](https://github.com/randalhucker/nutriflow_expo)
 - [NutriFlow Design Document](cs5001/assignment_10/appendix%20documents/NutriFlow_Design.pdf)
 - [Semester Meeting Notes](cs5001/assignment_10/appendix%20documents/NutriFlow_Meeting_Notes.md)
 - [Preliminary UI Mocks](cs5001/assignment_10/appendix%20documents/ASN_10_Mocks.pdf)
