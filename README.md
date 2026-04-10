@@ -12,7 +12,7 @@
 
 #### 3. [Test Plan and Results](cs5002/assignment_7/test_plan_with_results.md)
 
-#### 4. [User Manual](cs5002/assignment_2/docs/README.md)!
+#### 4. [User Manual](cs5002/assignment_7/docs/README.md)
 
 #### 5. [Spring Final PPT Presentation](cs5002/assignment_3/Slide_Deck.pdf)
 
