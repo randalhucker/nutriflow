@@ -2,7 +2,7 @@
 
 ## CS 5002 NutriFlow Final Design Report
 
-> NOTE: all individual CS-5002 assignment documents can be found under cs5002/assignment_`#`/ where `#` is the assignment number
+> NOTE: all individual CS-5002 assignment documents can be found under cs5002/assignment_`#`/ where `#` is the assignment number. In some cases, rather than change the content of the original assignment, we created a new version of the document(s) specifically for inclusion in the final design report. This means that some assignments have two versions: the original version (created for the initial assignment) and the final version (created for the final design report). In these cases, the final version is the one included in the table of contents below, and the original version can be found in its respective assignment folder.
 
 ### Table of Contents
 
